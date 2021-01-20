@@ -15,6 +15,7 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchAPI()
+
         // Do any additional setup after loading the view.
     }
     func fetchAPI() {
@@ -35,6 +36,7 @@ class ImageViewController: UIViewController {
 }
 
 extension ImageViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataImage.count
     }
