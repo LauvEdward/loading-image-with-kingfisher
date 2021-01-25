@@ -19,12 +19,13 @@ class ImageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func fetchAPI() {
-        APImanager.shared.fetchImage { (data) in
+        APImanager.shared.fetchImageAlamorefire(completion: { (data) in
             self.dataImage = data
             DispatchQueue.main.async {
                 self.setupUI()
+                self.collectionView.reloadData()
             }
-        }
+        })
     }
     
     func setupUI() {
@@ -43,7 +44,7 @@ extension ImageViewController : UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellImage
-        cell.imageInfor = dataImage[indexPath.row]
+        cell.configCellwithKingfisher(image: dataImage[indexPath.row])
         return cell
     }
     
