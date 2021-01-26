@@ -11,43 +11,35 @@ class ImageViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     let spacing : Int = 5
-    var dataImage : [Image] = []
+    var imageViewModel : ImagesViewModel!
+    var datasource : ImageCollectionViewDataSource<CellImage, Image>!
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchAPI()
-
+        setupUI()
         // Do any additional setup after loading the view.
     }
-    func fetchAPI() {
-        APImanager.shared.fetchImageAlamorefire(completion: { (data) in
-            self.dataImage = data
-            DispatchQueue.main.async {
-                self.setupUI()
-                self.collectionView.reloadData()
-            }
-        })
+    func setupUI() {
+        imageViewModel = ImagesViewModel()
+        imageViewModel.bindImageViewModelToController = {
+            self.updateDataSource()
+        }
     }
     
-    func setupUI() {
-        collectionView.dataSource = self
+    func updateDataSource() {
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "CellImage", bundle: nil), forCellWithReuseIdentifier: "cell")
+        self.datasource = ImageCollectionViewDataSource(cellIdentifier: "cell", items: imageViewModel.empData, configureCell: { (cell, image) in
+            cell.configCellwithKingfisher(img: image)
+        })
+        DispatchQueue.main.async {
+            self.collectionView.dataSource = self.datasource
+            self.collectionView.reloadData()
+        }
     }
 
 }
 
-extension ImageViewController : UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataImage.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellImage
-        cell.configCellwithKingfisher(image: dataImage[indexPath.row])
-        return cell
-    }
-    
+extension ImageViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let widthcell = (Int(collectionView.bounds.width) - spacing)/2
         return CGSize(width: widthcell, height: widthcell)
