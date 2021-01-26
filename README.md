@@ -1,5 +1,21 @@
-# TryTechnical
-## 1. Xây dựng MVVM:
+# Load Image
+## 1. Sử dụng Kingfisher để cache image:
+```
+    let processor = RoundCornerImageProcessor(cornerRadius: 0)
+    KF.url(URL(string: img.download_url!)!)
+            .placeholder(UIImage(named: img.download_url!))
+          .setProcessor(processor)
+          .loadDiskFileSynchronously()
+          .cacheMemoryOnly()
+            .lowDataModeSource(.network(URL(string: img.download_url!)!))
+          .onProgress { receivedSize, totalSize in  }
+            .onSuccess { result in  print(result.image)}
+          .onFailure { error in print(error)}
+          .set(to: imageView)
+```
+img.download_url là một đường link dẫn, imageView là view bạn muốn hiện image.
+có .setProcessor() là thuộc tính sẽ giúp bạn giải phóng bộ nhớ sau khi cache lại image, nếu không bộ nhớ sẽ tăng lên vô hạn.
+## 2. Xây dựng MVVM:
 Mô hình MVVM chú ý:
 + các đối tượng sẽ do một lớp API gọi và trả về:
 ```
