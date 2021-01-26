@@ -69,3 +69,31 @@ class ImageCollectionViewDataSource <CELL : UICollectionViewCell,T>: NSObject, U
     }
 }
 ```
++ Sử dụng: 
+```
+var imageViewModel : ImagesViewModel!
+    var datasource : ImageCollectionViewDataSource<CellImage, Image>!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+        // Do any additional setup after loading the view.
+    }
+    func setupUI() {
+        imageViewModel = ImagesViewModel()
+        imageViewModel.bindImageViewModelToController = {
+            self.updateDataSource()
+        }
+    }
+    
+    func updateDataSource() {
+        collectionView.delegate = self
+        collectionView.register(UINib(nibName: "CellImage", bundle: nil), forCellWithReuseIdentifier: "cell")
+        self.datasource = ImageCollectionViewDataSource(cellIdentifier: "cell", items: imageViewModel.empData, configureCell: { (cell, image) in
+            cell.configCellwithKingfisher(img: image)
+        })
+        DispatchQueue.main.async {
+            self.collectionView.dataSource = self.datasource
+            self.collectionView.reloadData()
+        }
+    }
+```
