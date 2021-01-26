@@ -13,8 +13,7 @@
           .onFailure { error in print(error)}
           .set(to: imageView)
 ```
-img.download_url là một đường link dẫn, imageView là view bạn muốn hiện image.
-có .setProcessor() là thuộc tính sẽ giúp bạn giải phóng bộ nhớ sau khi cache lại image, nếu không bộ nhớ sẽ tăng lên vô hạn.
+img.download_url là một đường link dẫn, imageView là view bạn muốn hiện image, .setProcessor() là thuộc tính sẽ giúp bạn giải phóng bộ nhớ sau khi cache lại image, nếu không bộ nhớ sẽ tăng lên vô hạn.
 ## 2. Xây dựng MVVM:
 Mô hình MVVM chú ý:
 + các đối tượng sẽ do một lớp API gọi và trả về:
