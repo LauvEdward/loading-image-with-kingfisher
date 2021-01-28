@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F05C1F925C25A95004680B8 /* ItemBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05C1F825C25A95004680B8 /* ItemBeacon.swift */; };
+		5F05C20125C27015004680B8 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05C20025C27015004680B8 /* TableViewDataSource.swift */; };
 		5F691C3A25B6D03800E792CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F691C3925B6D03800E792CF /* AppDelegate.swift */; };
 		5F691C3C25B6D03800E792CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F691C3B25B6D03800E792CF /* SceneDelegate.swift */; };
-		5F691C3E25B6D03800E792CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F691C3D25B6D03800E792CF /* ContentView.swift */; };
 		5F691C4025B6D03C00E792CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F691C3F25B6D03C00E792CF /* Assets.xcassets */; };
 		5F691C4325B6D03C00E792CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F691C4225B6D03C00E792CF /* Preview Assets.xcassets */; };
 		5F691C4625B6D03C00E792CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F691C4425B6D03C00E792CF /* LaunchScreen.storyboard */; };
@@ -21,15 +22,25 @@
 		5FBC6FEF25BFB4BE0079EC3C /* APIServiceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC6FEE25BFB4BE0079EC3C /* APIServiceImage.swift */; };
 		5FBC6FF525BFB54A0079EC3C /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC6FF425BFB54A0079EC3C /* ImagesViewModel.swift */; };
 		5FBC6FFA25BFC1990079EC3C /* ImageCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBC6FF925BFC1990079EC3C /* ImageCollectionViewDataSource.swift */; };
+		5FCAD31425C12AFC00CEC504 /* TapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD31325C12AFC00CEC504 /* TapBar.swift */; };
+		5FCAD31925C1531000CEC504 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD31725C1531000CEC504 /* BeaconViewController.swift */; };
+		5FCAD31A25C1531000CEC504 /* BeaconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCAD31825C1531000CEC504 /* BeaconViewController.xib */; };
+		5FCAD31F25C1539C00CEC504 /* BeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD31D25C1539C00CEC504 /* BeaconCell.swift */; };
+		5FCAD32025C1539C00CEC504 /* BeaconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCAD31E25C1539C00CEC504 /* BeaconCell.xib */; };
+		5FCAD33825C165B200CEC504 /* HeaderBeaconTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD33725C165B200CEC504 /* HeaderBeaconTableView.swift */; };
+		5FCAD33B25C165C400CEC504 /* HeaderBeaconTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCAD33A25C165C400CEC504 /* HeaderBeaconTableView.xib */; };
+		5FCAD34325C1737300CEC504 /* AddItemBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD34125C1737300CEC504 /* AddItemBeaconViewController.swift */; };
+		5FCAD34425C1737300CEC504 /* AddItemBeaconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCAD34225C1737300CEC504 /* AddItemBeaconViewController.xib */; };
 		A586AB7A4B0560C30078D870 /* Pods_ApplicationTryTechnical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA136E90B152FBF9F7A6269 /* Pods_ApplicationTryTechnical.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27C2D2FEDC58ED3A06B1095F /* Pods-ApplicationTryTechnical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationTryTechnical.debug.xcconfig"; path = "Target Support Files/Pods-ApplicationTryTechnical/Pods-ApplicationTryTechnical.debug.xcconfig"; sourceTree = "<group>"; };
+		5F05C1F825C25A95004680B8 /* ItemBeacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBeacon.swift; sourceTree = "<group>"; };
+		5F05C20025C27015004680B8 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		5F691C3625B6D03800E792CF /* ApplicationTryTechnical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationTryTechnical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F691C3925B6D03800E792CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F691C3B25B6D03800E792CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F691C3D25B6D03800E792CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5F691C3F25B6D03C00E792CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F691C4225B6D03C00E792CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F691C4525B6D03C00E792CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +53,15 @@
 		5FBC6FEE25BFB4BE0079EC3C /* APIServiceImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceImage.swift; sourceTree = "<group>"; };
 		5FBC6FF425BFB54A0079EC3C /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
 		5FBC6FF925BFC1990079EC3C /* ImageCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		5FCAD31325C12AFC00CEC504 /* TapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBar.swift; sourceTree = "<group>"; };
+		5FCAD31725C1531000CEC504 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
+		5FCAD31825C1531000CEC504 /* BeaconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeaconViewController.xib; sourceTree = "<group>"; };
+		5FCAD31D25C1539C00CEC504 /* BeaconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconCell.swift; sourceTree = "<group>"; };
+		5FCAD31E25C1539C00CEC504 /* BeaconCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeaconCell.xib; sourceTree = "<group>"; };
+		5FCAD33725C165B200CEC504 /* HeaderBeaconTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBeaconTableView.swift; sourceTree = "<group>"; };
+		5FCAD33A25C165C400CEC504 /* HeaderBeaconTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderBeaconTableView.xib; sourceTree = "<group>"; };
+		5FCAD34125C1737300CEC504 /* AddItemBeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemBeaconViewController.swift; sourceTree = "<group>"; };
+		5FCAD34225C1737300CEC504 /* AddItemBeaconViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemBeaconViewController.xib; sourceTree = "<group>"; };
 		81A1A941FB0FAA4BE1CCE309 /* Pods-ApplicationTryTechnical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplicationTryTechnical.release.xcconfig"; path = "Target Support Files/Pods-ApplicationTryTechnical/Pods-ApplicationTryTechnical.release.xcconfig"; sourceTree = "<group>"; };
 		CAA136E90B152FBF9F7A6269 /* Pods_ApplicationTryTechnical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplicationTryTechnical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +86,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5F05C1F725C25A80004680B8 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5F05C1F825C25A95004680B8 /* ItemBeacon.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5F05C1FF25C26FFC004680B8 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				5F05C20025C27015004680B8 /* TableViewDataSource.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		5F691C2D25B6D03700E792CF = {
 			isa = PBXGroup;
 			children = (
@@ -87,15 +123,16 @@
 		5F691C3825B6D03800E792CF /* ApplicationTryTechnical */ = {
 			isa = PBXGroup;
 			children = (
+				5FCAD31225C12AD500CEC504 /* Beacon */,
 				5FAFDAC225B7BB8600B3EEC7 /* Realm */,
-				5F691C4E25B6D04700E792CF /* ImageViewController */,
+				5F691C4E25B6D04700E792CF /* MVVM */,
 				5F691C3925B6D03800E792CF /* AppDelegate.swift */,
 				5F691C3B25B6D03800E792CF /* SceneDelegate.swift */,
-				5F691C3D25B6D03800E792CF /* ContentView.swift */,
 				5F691C3F25B6D03C00E792CF /* Assets.xcassets */,
 				5F691C4425B6D03C00E792CF /* LaunchScreen.storyboard */,
 				5F691C4725B6D03C00E792CF /* Info.plist */,
 				5F691C4125B6D03C00E792CF /* Preview Content */,
+				5FCAD31325C12AFC00CEC504 /* TapBar.swift */,
 			);
 			path = ApplicationTryTechnical;
 			sourceTree = "<group>";
@@ -108,7 +145,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5F691C4E25B6D04700E792CF /* ImageViewController */ = {
+		5F691C4E25B6D04700E792CF /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				5FBC6FF825BFC1650079EC3C /* Custom */,
@@ -119,7 +156,7 @@
 				5F691C4F25B6D07100E792CF /* ImageViewController.swift */,
 				5F691C5025B6D07100E792CF /* ImageViewController.xib */,
 			);
-			path = ImageViewController;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		5F691C5425B6D28A00E792CF /* ViewModel */ = {
@@ -168,6 +205,39 @@
 				5FBC6FF925BFC1990079EC3C /* ImageCollectionViewDataSource.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		5FCAD31225C12AD500CEC504 /* Beacon */ = {
+			isa = PBXGroup;
+			children = (
+				5F05C1FF25C26FFC004680B8 /* Custom */,
+				5F05C1F725C25A80004680B8 /* Class */,
+				5FCAD33625C1659300CEC504 /* HeaderTableView */,
+				5FCAD31C25C1538400CEC504 /* Cell */,
+				5FCAD31725C1531000CEC504 /* BeaconViewController.swift */,
+				5FCAD31825C1531000CEC504 /* BeaconViewController.xib */,
+				5FCAD34125C1737300CEC504 /* AddItemBeaconViewController.swift */,
+				5FCAD34225C1737300CEC504 /* AddItemBeaconViewController.xib */,
+			);
+			path = Beacon;
+			sourceTree = "<group>";
+		};
+		5FCAD31C25C1538400CEC504 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5FCAD31D25C1539C00CEC504 /* BeaconCell.swift */,
+				5FCAD31E25C1539C00CEC504 /* BeaconCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5FCAD33625C1659300CEC504 /* HeaderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5FCAD33725C165B200CEC504 /* HeaderBeaconTableView.swift */,
+				5FCAD33A25C165C400CEC504 /* HeaderBeaconTableView.xib */,
+			);
+			path = HeaderTableView;
 			sourceTree = "<group>";
 		};
 		BB7FDD3F42610262E47971BE /* Pods */ = {
@@ -238,10 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCAD31A25C1531000CEC504 /* BeaconViewController.xib in Resources */,
 				5F691C4625B6D03C00E792CF /* LaunchScreen.storyboard in Resources */,
 				5F691C6125B6D98C00E792CF /* CellImage.xib in Resources */,
+				5FCAD34425C1737300CEC504 /* AddItemBeaconViewController.xib in Resources */,
 				5F691C4325B6D03C00E792CF /* Preview Assets.xcassets in Resources */,
+				5FCAD32025C1539C00CEC504 /* BeaconCell.xib in Resources */,
 				5F691C5225B6D07100E792CF /* ImageViewController.xib in Resources */,
+				5FCAD33B25C165C400CEC504 /* HeaderBeaconTableView.xib in Resources */,
 				5F691C4025B6D03C00E792CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,12 +372,18 @@
 				5FBC6FF525BFB54A0079EC3C /* ImagesViewModel.swift in Sources */,
 				5F691C3A25B6D03800E792CF /* AppDelegate.swift in Sources */,
 				5F691C5A25B6D35800E792CF /* Image.swift in Sources */,
+				5FCAD31F25C1539C00CEC504 /* BeaconCell.swift in Sources */,
 				5F691C3C25B6D03800E792CF /* SceneDelegate.swift in Sources */,
 				5F691C5125B6D07100E792CF /* ImageViewController.swift in Sources */,
-				5F691C3E25B6D03800E792CF /* ContentView.swift in Sources */,
+				5F05C20125C27015004680B8 /* TableViewDataSource.swift in Sources */,
 				5FBC6FEF25BFB4BE0079EC3C /* APIServiceImage.swift in Sources */,
+				5FCAD31425C12AFC00CEC504 /* TapBar.swift in Sources */,
 				5F691C6025B6D98C00E792CF /* CellImage.swift in Sources */,
+				5FCAD34325C1737300CEC504 /* AddItemBeaconViewController.swift in Sources */,
 				5FBC6FFA25BFC1990079EC3C /* ImageCollectionViewDataSource.swift in Sources */,
+				5FCAD33825C165B200CEC504 /* HeaderBeaconTableView.swift in Sources */,
+				5F05C1F925C25A95004680B8 /* ItemBeacon.swift in Sources */,
+				5FCAD31925C1531000CEC504 /* BeaconViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
